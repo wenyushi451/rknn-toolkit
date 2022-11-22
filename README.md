@@ -45,3 +45,15 @@ b1b32a4e8803dd9303ab1a72ae8deccf  rknn_toolkit_lite-1.7.3-cp38-cp38-linux_x86_64
   <img width="200" height="200"  src="https://github.com/rockchip-linux/rknn-toolkit/blob/master/QQGroupQRCode.png" title="QQ Group Chat"/>
   <img width="200" height="200"  src="https://github.com/rockchip-linux/rknn-toolkit/blob/master/QQGroup2QRCode.png" title="QQ Group Chat2"/>
 </center>
+
+## Experiment
+### Environment
+``` bash
+# Linux x64
+conda create -n rknn python=3.6
+pip install -r packages/requirements.txt
+pip install packages/rknn_toolkit-1.7.3-cp36-cp36m-linux_x86_64.whl
+```
+
+### ONNX to RKNN
+Go to examples/resnet50v2 and run `python cs.py`

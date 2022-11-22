@@ -77,7 +77,7 @@ if __name__ == '__main__':
         exit(ret)
     print('done')
 
-    # ret = rknn.load_rknn('./resnet_18.rknn')
+    # ret = rknn.load_rknn('./cutpaste.rknn')
 
     # Set inputs
     img = cv2.imread('./space_shuttle_224.jpg')
@@ -94,6 +94,7 @@ if __name__ == '__main__':
     # Inference
     print('--> Running model')
     outputs = rknn.inference(inputs=[img])
+    print(outputs)
     show_outputs(softmax(np.array(outputs[0][0])))
     print('done')
 
